@@ -34,5 +34,30 @@ public class Action {
         return item;
     }
 
+    @ResponseBody
+    @RequestMapping(value = "/item/{id}" ,method = RequestMethod.POST)
+    public TbItem addItem(@PathVariable Long id){
+        TbItem item = itemService.selectById(id);
+        return item;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/item/{id}" ,method = RequestMethod.DELETE)
+    public String delItem(@PathVariable Long id){
+        boolean isdel = itemService.delById(id);
+        if (isdel)
+            return "成功啦";
+        return "失败啦";
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/item/{id}" ,method = RequestMethod.PUT)
+    public TbItem putItem(@PathVariable Long id){
+        TbItem item = itemService.selectById(id);
+        return item;
+    }
+
+
+
 
 }

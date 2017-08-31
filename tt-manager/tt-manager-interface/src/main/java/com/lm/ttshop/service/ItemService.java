@@ -9,4 +9,10 @@ public interface ItemService {
 
     TbItem selectById(Long id);
 
+    boolean delById(Long id);
+
+    boolean putById(Long id);
+
+    TbItem add(TbItem item);
+
 }

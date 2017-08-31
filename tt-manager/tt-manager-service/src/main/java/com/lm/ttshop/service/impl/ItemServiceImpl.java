@@ -29,4 +29,21 @@ public class ItemServiceImpl implements ItemService {
 
         return item;
     }
+
+    @Override
+    public boolean delById(Long id) {
+        int i = itemMapper.deleteByPrimaryKey(id);
+        return i == 1;
+
+    }
+
+    @Override
+    public boolean putById(Long id) {
+        return false;
+    }
+
+    @Override
+    public TbItem add(TbItem item) {
+        return null;
+    }
 }
