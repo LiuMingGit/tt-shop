@@ -17,7 +17,50 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Annotation profile for tt-common" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="tt-common" />
+      </profile>
+      <profile default="false" name="Annotation profile for tt-manager-web" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="tt-manager-web" />
+      </profile>
+      <profile default="false" name="Annotation profile for tt-manager-service" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="tt-manager-service" />
+      </profile>
+      <profile default="false" name="Annotation profile for tt-manager-interface" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="tt-manager-interface" />
+      </profile>
+      <profile default="false" name="Annotation profile for tt-manager-dao" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="tt-manager-dao" />
+      </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.7" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="tt-common" target="1.7" />
+      <module name="tt-manager" target="1.7" />
+      <module name="tt-manager-dao" target="1.7" />
+      <module name="tt-manager-interface" target="1.7" />
+      <module name="tt-manager-service" target="1.7" />
+      <module name="tt-manager-web" target="1.7" />
+      <module name="tt-parent" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
