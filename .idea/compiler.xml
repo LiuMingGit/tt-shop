@@ -52,12 +52,20 @@
         <processorPath useClasspath="true" />
         <module name="tt-manager-dao" />
       </profile>
+      <profile default="false" name="Annotation profile for tt-manager-pojo" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="tt-manager-pojo" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
       <module name="tt-common" target="1.7" />
       <module name="tt-manager" target="1.7" />
       <module name="tt-manager-dao" target="1.7" />
       <module name="tt-manager-interface" target="1.7" />
+      <module name="tt-manager-pojo" target="1.7" />
       <module name="tt-manager-service" target="1.7" />
       <module name="tt-manager-web" target="1.7" />
       <module name="tt-parent" target="1.7" />
